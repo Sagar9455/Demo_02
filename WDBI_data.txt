@@ -1,0 +1,47 @@
+#TC_ID-0 , Sub Service Description , Service ID , Sub service ID , Request Data Bytes , Positive Response Data
+
+TC_001 , DefaultSession (10 01) , 0x10 , 0x01 , 10 01 , 50
+TC_002 , Extended Session (10 03) , 0x10 , 0x03 , 10 03 , 50
+TC_003 , TesterPresent (3E 00) , 0x3E , 0x00 , 3E 00 , 7E
+TC_004 , S/W Version DataIdentifier (22 F1 DD) , 0x22 , 0xF1DD , 22 F1 DD , 62
+TC_005 , BodyCANDataBaseVersionNumber DataIdentifier (22 F1 00) , 0x22 , 0xF100 , 22 F1 00 , 62
+TC_006 , VehicleManufacturerSparePartNumber DataIdentifier (22 F1 87) , 0x22 , 0xF187 , 22 F1 87 , 62
+TC_007 , ECUManufacturingDate DataIdentifier (22 F1 8B) , 0x22 , 0xF18B , 22 F1 8B , 62
+TC_008 , ECUSerialNumber DataIdentifier (22 F1 8C) , 0x22 , 0xF18C , 22 F1 8C , 62
+TC_009 , SystemSupplierECUHardwareVersionNumber DataIdentifier (22 F1 91) , 0x22 , 0xF191 , 22 F1 91 , 62
+TC_010 , SystemSupplierECUHardwareVersionNumber DataIdentifier (22 F1 93) , 0x22 , 0xF193 , 22 F1 93 , 62
+TC_011 , SystemSupplierECUSoftwareVersionNumber DataIdentifier (22 F1 95) , 0x22 , 0xF195 , 22 F1 95 , 62
+TC_012 , SoftwareVersionHKMCVehicleManufacture DataIdentifier (22 F1 A0) , 0x22 , 0xF1A0 , 22 F1 A0 , 62
+TC_013 , ECUSupplierCode DataIdentifier (22 F1 A1) , 0x22 , 0xF1A1 , 22 F1 A1 , 62
+TC_014 , ECUSoftwareUNITnumber DataIdentifier (22 F1 B0) , 0x22 , 0xF1B0 , 22 F1 B0 , 62
+TC_015 , ECU Software UNIT1 Version DataIdentifier (22 F1 B1) , 0x22 , 0xF1B1 , 22 F1 B1 , 62
+TC_016 , SystemNameOrEngineType DataIdentifier (22 F1 97) , 0x22 , 0xF197 , 22 F1 97 , 62
+TC_017 , ECUSoftwareUnit1IVD DataIdentifier (22 F1 C1) , 0x22 , 0xF1C1 , 22 F1 C1 , 62
+TC_018 , LocalRXSWIN DataIdentifier (22 F1 EF) , 0x22 , 0xF1EF , 22 F1 EF , 62
+
+TC_019 , DefaultSession (10 01) , 0x10 , 0x01 , 10 01 , 50
+TC_020 , Extended Session (10 03) , 0x10 , 0x03 , 10 03 , 50
+TC_021 , TesterPresent (3E 00) , 0x3E , 0x00 , 3E 00 , 7E
+TC_022 , Request seed (27 11) , 0x27 , 0x11 , 27 11 , 67
+TC_045 , Request seed (27 12) , 0x27 , 0x12 , 27 12 , 67
+# 2E Write Data By Identifier Service Test Cases with Data Bytes
+
+TC_023 , ECUManufacturingDate DataIdentifier (2E F1 8B) , 0x2E , 0xF18B , 2E F1 8B 00 00 00 00 , 6E F1 8B
+TC_024 , ECUSupplierCode DataIdentifier (2E F1 A1) , 0x2E , 0xF1A1 , 2E F1 A1 61 38 31 32 , 6E F1 A1
+TC_025 , VehicleManufacturerSparePartNumber DataIdentifier (2E F1 87) , 0x2E , 0xF187 , 2E F1 87 39 36 35 34 30 44 59 30 30 30 , 6E F1 87
+TC_026 , ECUSerialNumber DataIdentifier (2E F1 8C) , 0x2E , 0xF18C , 2E F1 8C 61 38 31 31 32 33 34 35 37 39 , 6E F1 8C
+TC_027 , SystemSupplierECUHardwareVersionNumber DataIdentifier (2E F1 91) , 0x2E , 0xF191 , 2E F1 91 30 31 2E 30 30 , 6E F1 91
+TC_028 , SystemSupplierECUHardwareVersionNumber DataIdentifier (2E F1 93) , 0x2E , 0xF193 , 2E F1 93 30 31 2E 30 30 , 6E F1 93
+TC_029 , SystemSupplierECUSoftwareVersionNumber DataIdentifier (2E F1 95) , 0x2E , 0xF195 , 2E F1 95 30 31 2E 30 30 , 6E F1 95
+TC_030 , SystemNameOrEngineType DataIdentifier (2E F1 97) , 0x2E , 0xF197 , 2E F1 97 4D 4B 42 44 , 6E F1 97
+TC_031 , ECUSoftwareUnit1IVD DataIdentifier (2E F1 C1) , 0x2E , 0xF1C1 , 2E F1 C1 A6 32 F7 CD 4D F6 CD A6 04 EB 7E 3A 2E 85 0A 39 2D 6D F1 C0 AA 2C 5A F0 13 B5 45 F5 BC C9 D6 FD , 6E F1 C1
+
+TC_032 , DTC setting ON (85 01) , 0x85 , 0x01 , 85 01 , C5
+TC_033 , DTC setting OFF (85 02) , 0x85 , 0x02 , 85 02 , C5
+TC_034 , Read DTC (19 01) , 0x19 , 0x01 , 19 01 , 59
+TC_035 , Fault memory clear (14 0xFFFFFF) , 0x14 , 0xFFFFFF , 14 FF FF FF , 54
+TC_036 , EnableRxAndEnableTx (28 00) , 0x28 , 0x00 , 28 00 , 68
+TC_037 , EnableRxAndDisableTx (28 01) , 0x28 , 0x01 , 28 01 , 68
+TC_038 , DisableRxAndEnableTx (28 02) , 0x28 , 0x02 , 28 02 , 68
+TC_039 , DisableRxAndDisableTx (28 03) , 0x28 , 0x03 , 28 03 , 68
+TC_040 , Hard Reset (11 01) , 0x11 , 0x01 , 11 01 , 51
