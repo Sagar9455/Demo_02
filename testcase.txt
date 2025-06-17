@@ -1,0 +1,9 @@
+#TC_ID-0 , Sub Service Description , Service ID , Sub service ID , Positive response data
+TC_001 , DefaultSession(10 01) , 0x10 , 0x01 , 0x50
+TC_002 , DefaultSession(10 01) , 0x10 , 0x01 , 0x50
+TC_003 , DefaultSession(10 01) , 0x10 , 0x01 , 0x50
+TC_004 , DefaultSession(10 01) , 0x10 , 0x01 , 0x50
+TC_005 , DefaultSession(10 01) , 0x10 , 0x01 , 0x50
+TC_006 , DefaultSession(10 01) , 0x10 , 0x01 , 0x50
+TC_007 , DefaultSession(10 01) , 0x10 , 0x01 , 0x50
+TC_008 , DefaultSession(10 01) , 0x10 , 0x01 , 0x50
