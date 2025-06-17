@@ -1,0 +1,79 @@
+#TC_ID-0 , Sub Service Description , Service ID , Sub service ID , Positive response data
+TC_001 , DefaultSession(10 01) , 0x10 , 0x01 , 0x50
+TC_002 , DefaultSession wrong sub function(0x10 0x0E) , 0x10 , 0x0E , 0x7F
+TC_222 , DefaultSession(10 01) , 0x10 , 0xE0 , 0x7F
+TC_003 , Hard Reset(11 01) , 0x11 , 0x01 , 0x51
+TC_004 , ECU Reset (0x11 03) , 0x11 , 0x03 , 0x51
+TC_005 , ECU Reset wrong sub function(0x11 0x0F) , 0x11 , 0x0F , 0x7F
+TC_006 , DTC setting ON wrong Pre-condition (85 01), 0x85 , 0x01 , 0x7F
+TC_007 , DTC setting OFF wrong Pre-condition(85 02) , 0x85 , 0x02 , 0x7F
+TC_008 , DTC wrong  setting and Pre-condition(85 04) , 0x85 , 0x04 , 0x7F
+TC_009 , TesterPresent(3E 00) , 0x3E , 0x00 , 0x7E
+TC_010 , S/W Version Dataidentifier(22 F1 DD) , 0x22 , 0xF1DD , 0x62
+TC_011 , BodyCANDataBaseVersionNumBErDataIdentifier(22 F1 00) , 0x22 , 0xF100 , 0x62
+TC_012 , VehicleManufacturerSparePartNumBErDataIdentifier(22 F1 87) , 0x22 , 0xF187 , 0x62
+TC_013 , ECUManufacturingDateDataIdentifier(22 F1 8B) , 0x22 , 0xF18B , 0x62
+TC_014 , ECUSerialNumberDataIdentifier (22 F1 8C), 0x22 , 0xF18C , 0x62
+TC_015 , SystemSupplierECUHardwareVersionNumberDataIdentifier(22 F1 91), 0x22 , 0xF191 , 0x62
+TC_016 , SystemSupplierECUHardwareVersionNumberDataIdentifier(22 F1 93) , 0x22 , 0xF193 , 0x62
+TC_017 , SystemSupplierECUSoftwareVersionNumbe DataIdentifier(22 F1 95) , 0x22 , 0xF195 , 0x62
+TC_018 , SoftwareVersionHKMCVehicleManufactureDataIdentifier(22 F1 A0) , 0x22 , 0xF1A0 , 0x62
+TC_019 , ECUSupplierCodeDataIdentifier(22 F1 A1)  , 0x22 , 0xF1A1 , 0x62
+TC_020 , ECUSoftwareUNITnumberDataIdentifier(22 F1 B0) , 0x22 , 0xF1B0 , 0x62
+TC_021 , ECU Software UNIT1 Version Data Identifier(22 F1 B1) , 0x22 , 0xF1B1 , 0x62
+TC_022 , SystemNameOrEngineTypeDataIdentifier(22 F1 97) , 0x22 , 0xF197 , 0x62
+TC_023 , ECUSoftwareUnit1IVDDataIdentifier(22 F1 C1) , 0x22 , 0xF1C1 , 0x62
+TC_024 , LocalRXSWINDataIdentifier(22 F1 EF) , 0x22 , 0xF1EF , 0x62
+TC_025 , Read DTC(19 01) , 0x19 , 0x01 , 0x59
+TC_026 , Read DTC(19 02) , 0x19 , 0x02 , 0x59
+TC_027 , Read DTC wrong masking(19 0F) , 0x19 , 0x0F , 0x7F
+TC_028 , Fault memory clear(14 0xFFFFFF) , 0x14 , 0xFFFFFF , 0x54
+TC_029 , Fault memory clear wrong Group(14 0xFFEEEE) , 0x14 , 0xFFEEEE , 0x7F
+TC_030 , Request seed wrong pre-condition and invalid seed((27 17)) , 0x27 , 0x17 , 0x7F
+TC_031 , Send Key((27 18)) wrong pre-condition and invalid key , 0x27 , 0x18 , 0x7F
+TC_032 , Request seed wrong pre-condition((27 11)) , 0x27 , 0x11 , 0x7F
+TC_033 , Send Key((27 12)) wrong pre-condition , 0x27 , 0x12 , 0x7F
+TC_100 , EXTENDED Session(10 02) , 0x10 , 0x02 , 0x50
+TC_034 , ECUManufacturingDateDataIdentifier_Extended_ignored(2E F1 8B) , 0x2E , 0xF18B , 0x6E
+TC_035 , ECUSupplierCodeDataIdentifier_Extended_ignored (2E F1 A1) , 0x2E , 0xF1A1 , 0x6E
+TC_036 , VehicleManufacturerSparePartNumBErDataIdentifier_Extended_ignored(2E F1 87) , 0x2E , 0xF187 , 0x6E
+TC_037 , ECUSerialNumberDataIdentifier_Extended_ignored (2E F1 8C), 0x2E , 0xF18C , 0x6E
+TC_038 , SystemSupplierECUHardwareVersionNumberDataIdentifier_Extended_ignored(2E F1 91) , 0x2E , 0xF191 , 0x6E
+TC_039 , SystemSupplierECUHardwareVersionNumberDataIdentifier_Extended_ignored(2E F1 93) , 0x2E , 0xF193 , 0x6E
+TC_040 , SystemSupplierECUSoftwareVersionNumbe_Extended_ignored(2E F1 95) , 0x2E , 0xF195 , 0x6E
+TC_041 , SystemNameOrEngineTypeDataIdentifier_Extended_ignored(2E F1 97) , 0x2E , 0xF197 , 0x6E
+TC_042 , ECUSoftwareUnit1IVDDataIdentifier_Extended_ignored(2E F1 C1) , 0x2E , 0xF1C1 , 0x6E
+TC_044 , ECUManufacturingDateDataIdentifier_Default_session(2E F1 8B) , 0x2E , 0xF18B , 0x7F
+TC_045 , ECUSupplierCodeDataIdentifier__Default_session (2E F1 A1) , 0x2E , 0xF1A1 , 0x6E
+TC_046 , Extended Session (10 03) , 0x10 , 0x03 , 0x50
+TC_047 , ECUManufacturingDateDataIdentifier_security_ignored(2E F1 8B) , 0x2E , 0xF18B , 0x6E
+TC_048 , ECUSupplierCodeDataIdentifier_security_ignored (2E F1 A1) , 0x2E , 0xF1A1 , 0x6E
+TC_049 , DefaultSession(10 01) , 0x10 , 0x01 , 0x50
+TC_050 , Extended Session (10 03) , 0x10 , 0x03 , 0x50
+TC_051 , TesterPresent(3E 00) , 0x3E , 0x00 , 0x7E
+TC_052 , Request seed((27 11)) , 0x27 , 0x11 , 0x67
+TC_053 , Send Key((27 12)) , 0x27 , 0x12 , 0x67
+TC_054 , ECUManufacturingDateDataIdentifier(2E F1 8B) , 0x2E , 0xF18B , 0x6E
+TC_055 , ECUSupplierCodeDataIdentifier (2E F1 A1) , 0x2E , 0xF1A1 , 0x6E
+TC_056 , VehicleManufacturerSparePartNumBErDataIdentifier(2E F1 87) , 0x2E , 0xF187 , 0x6E
+TC_057 , ECUSerialNumberDataIdentifier (2E F1 8C), 0x2E , 0xF18C , 0x6E
+TC_058 , SystemSupplierECUHardwareVersionNumberDataIdentifier(2E F1 91) , 0x2E , 0xF191 , 0x6E
+TC_059 , SystemSupplierECUHardwareVersionNumberDataIdentifier(2E F1 93) , 0x2E , 0xF193 , 0x6E
+TC_060 , SystemSupplierECUSoftwareVersionNumbe DataIdentifier(2E F1 95) , 0x2E , 0xF195 , 0x6E
+TC_061 , SystemNameOrEngineTypeDataIdentifier(2E F1 97) , 0x2E , 0xF197 , 0x6E
+TC_062 , ECUSoftwareUnit1IVDDataIdentifier(2E F1 C1) , 0x2E , 0xF1C1 , 0x6E
+TC_063 , DTC setting out of range(85 04) , 0x85 , 0x04 , 0x7F
+TC_064 , EnableRxAndEnableTx Extended session(28 00) , 0x28 , 0x00 , 0x68
+TC_065 , EnableRxAndDisableTx Extended session(28 01) , 0x28 , 0x01 , 0x68
+TC_066 , DisableRxAndEnableTx Extended session(28 02) , 0x28 , 0x02 , 0x68
+TC_067 , DisableRxAndDisableTx Extended session(28 03) , 0x28 , 0x03 , 0x68
+TC_068 , Communication Control out of range(0x28 0x08) , 0x28 , 0x08 , 0x7F
+TC_069 , Hard Reset with Extended session(11 01) , 0x11 , 0x01 , 0x51
+TC_070 , Read DTC with Extended session(19 01) , 0x19 , 0x01 , 0x59
+TC_071 , Read DTC Extended session(19 02) , 0x19 , 0x02 , 0x59
+TC_072 , Read DTC wrong masking Extended session(19 0F) , 0x19 , 0x0F , 0x7F
+TC_073 , Fault memory clear Extended session(14 0xFFFFFF) , 0x14 , 0xFFFFFF , 0x54
+TC_074 , Fault memory clear wrong Group Extended session(14 0xFFEEEE) , 0x14 , 0xFFEEEE , 0x7F
+TC_075 , Input Output Control invalid data (0x2F 0xF123) , 0x2F , 0xF123 , 0x7F
+TC_111 , DefaultSession(10 01) , 0x10 , 0xFFFF , 0x7F
+
